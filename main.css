@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+h2 {
+    text-align: center;
+    position: relative;
+    background-color: #d4a373; /* Brown color */
+    color: #faedcd; /* White text color */
+    padding: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+h2:before,
+h2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 15px; /* Adjust the width of the fade-out effect */
+    height: 100%;
+    background: linear-gradient(to left, transparent, #d4a373); /* Left fade-out effect */
+    
+}
+
+h2:after {
+    right: 0;
+    left: auto;
+    background: linear-gradient(to right, transparent, #d4a373); /* Right fade-out effect */
+}
+/* adds a background color for the names
+h3{
+    background-color: #d4a373;
+    padding: 0.2em;
+    border-radius: 5px;
+    color:#faedcd;
+}*/
+
+h3{
+    color: #d4a373;
+}
+
+.img{
+    visibility: visible;
+}
+
+.banner{
+    visibility: visible;
+}
+ 
+@media screen and (max-width:425px){
+    .img{
+        display: none;
+    }
+    .banner{
+        display: none;
+    }
+}
+
+.carousel-item{
+    object-fit: cover;
+}
+
+.d-block{
+    width:auto;
+    height: 15em;
+    margin: auto;
+}
+
+h5, p{
+    text-align: center;
+    margin-bottom: 2.3em;
+}
+
+p{
+    margin-bottom: 5em;
+}
+
+.section1{
+    height: 100vh;
+    width: auto;
+    background: url(https://wallpaperaccess.com/full/1320593.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    a{
+        text-decoration: underline;
+        color: antiquewhite;
+        transition: color 0.2s ease-in-out;
+    }
+    a:hover{
+        color: #6c584c;
+    }
+
+    button{
+        z-index:1;
+        background-color:transparent;
+        padding:0.8em;
+        color:antiquewhite;
+        font-size: 20px;
+        border:none;
+        transition: color 0.3s ease;
+        padding-right: 0;
+        }
+        
+        button:hover{
+          color:#6c584c;
+          cursor: pointer;
+        }
+    
+        .content-container {
+          text-align: center;
+          z-index: 1;
+          position: relative;
+        }
+        .arrow {
+            border: solid antiquewhite;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 5px;
+            margin-right: 0;
+            transition: border 0.2s ease;
+          }
+          
+          .right {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+          }
+      
+          .arrow:hover{
+            border-color: #6c584c;
+            cursor: pointer;
+            
+          }
+
+          .overlay{
+            background-color:black;
+            position:absolute;
+            height:100%;
+            width:100%;
+            inset:0;
+            opacity:60%;
+            z-index:0;
+            }
